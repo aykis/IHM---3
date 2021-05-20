@@ -92,6 +92,8 @@ public class IhmTp3 extends JFrame {
 
     private void buildPanelSouth() {
         // question 1 :  Bandeau des images dans la partie basse
+    	JThumbnailsRoll thumbsRoll = new JThumbnailsRoll(model);
+        this.add(thumbsRoll, BorderLayout.SOUTH);
         
     }
     
