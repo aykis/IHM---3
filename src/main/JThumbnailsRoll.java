@@ -18,12 +18,11 @@ public class JThumbnailsRoll extends JPanel{
 	private ArrayList<JThumbnail> thumbnails;
 	
 	public JThumbnailsRoll(ImageLibrary model) {
-		super(new FlowLayout(FlowLayout.LEFT, 10, 10));
-        super.setLayout(new FlowLayout(FlowLayout.LEFT, 20, 10));
+		super(new FlowLayout(FlowLayout.CENTER, 10, 0));
         
         thumbnails = new ArrayList<JThumbnail>();
 		for(int i=0; i<model.getSize(); i++) {
-			thumbnails.add(new JThumbnail(model.getImage(i)));
+			thumbnails.add(new JThumbnail(model.getImageIcon(i)));
 			this.add(thumbnails.get(thumbnails.size()-1));
 		}
 	}

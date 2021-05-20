@@ -19,7 +19,7 @@ public class JThumbnail extends JPanel{
 	private static final long serialVersionUID = 1L;
 	
 	public JThumbnail(ImageIcon image) {
-        super(new FlowLayout(FlowLayout.LEFT, 10, 10));
+        super(new FlowLayout(FlowLayout.CENTER, 0, 0));
         //super.setPreferredSize(new Dimension(40, 30));
         super.setBorder(BorderFactory.createBevelBorder(1));
         
